@@ -253,7 +253,7 @@ class SkillList:
 
             remetente = 'romulogurgeldf@gmail.com'
             senha = 'fodbbsphuvcqmzuh '
-            destinatario = 'instrutor.romulo@gmail.com'
+            destinatario = 'consultreds@gmail.com'
             assunto = 'Enviando arquivos da prova'
 
             # Criando o objeto MIMEMultipart
