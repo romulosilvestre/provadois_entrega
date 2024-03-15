@@ -1,0 +1,13 @@
+Price: 5600000
+Area: 10500
+Bedrooms: 4
+Bathrooms: 2
+Stories: 2
+Mainroad: yes
+Guestroom: no
+Basement: no
+Hotwaterheating: no
+Airconditioning: no
+Parking: 1
+Prefarea: no
+Furnishingstatus: semi-furnished

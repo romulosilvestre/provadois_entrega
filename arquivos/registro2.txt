@@ -1,0 +1,13 @@
+Price: 5250000
+Area: 10269
+Bedrooms: 3
+Bathrooms: 1
+Stories: 1
+Mainroad: yes
+Guestroom: no
+Basement: no
+Hotwaterheating: no
+Airconditioning: no
+Parking: 1
+Prefarea: yes
+Furnishingstatus: semi-furnished
