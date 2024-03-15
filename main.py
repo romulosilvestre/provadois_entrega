@@ -1,5 +1,8 @@
 # FIXME:Skill 1
 import time
+
+import pandas as pd
+
 from skilllist import SkillList
 from skillzero import SkillZero
 def main():
@@ -34,12 +37,20 @@ def main():
                 print("Uma aula sobre dicionários...")
                 skill.skill_five()
             case 6:
-                print("qtde registros")
                 skill.skill_six()
+            case 7:
+                skill.skill_seven()
+            case 8:
+                skill.skill_eight()
+            case 9:
+                dataframe = pd.read_csv("properties.csv")
+                skill.skill_nine(dataframe)
+            case 10:
+                print("Enviando as atividades")
+                skill.skill_ten()
             case _:
                 print("encerrando...")
                 break
-
 
 if __name__ == "__main__":
     main()
