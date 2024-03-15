@@ -289,30 +289,34 @@ class SkillList:
         else:
             print("Nenhum arquivo encontrado na pasta 'arquivo'.")
 
-
-    def skill_twelve(self,propriedades_filtradas):
-       nome_pasta = "arquivos"
-       # Criar a pasta na raiz do projeto
-       print("criando a pasta")
-       time.sleep(4)
-       os.makedirs(nome_pasta, exist_ok=True)
-       # Lista de nomes dos arquivos
-       time.sleep(3)
-       print("Definindo arquivos")
-       nomes_arquivos = ["registro1.txt", "registro2.txt", "registro3.txt"]
-       print("criando os três arquivos")
-       time.sleep(2)
-       for nome_arquivo in nomes_arquivos:
+    def skill_twelve(self, propriedades_filtradas):
+        nome_pasta = "arquivos"
+        # Criar a pasta na raiz do projeto
+        print("criando a pasta")
+        time.sleep(4)
+        os.makedirs(nome_pasta, exist_ok=True)
+        # Lista de nomes dos arquivos
+        time.sleep(3)
+        print("Definindo arquivos")
+        nomes_arquivos = ["registro1.txt", "registro2.txt", "registro3.txt"]
+        print("criando os três arquivos")
+        time.sleep(2)
+        for i, nome_arquivo in enumerate(nomes_arquivos):
             caminho_arquivo = os.path.join(nome_pasta, nome_arquivo)
-            with open(caminho_arquivo, "w") as arquivo:
-                for indice, propriedade in propriedades_filtradas.iterrows():
-                    print(f"Propriedade {indice}:")
-                    for coluna, valor in propriedade.items():
-                        s = f"{coluna.capitalize()}: {valor}"
-                        arquivo.write(s)
-                        arquivo.write("\n")
-                    print("-" * 30)
+            with open(caminho_arquivo,
+                      "w") as arquivo:  # Abre o arquivo no modo de escrita, substituindo o conteúdo existente
+                indice = propriedades_filtradas.index[i]  # Obtém o índice do registro na lista de registros filtrados
+                propriedade = propriedades_filtradas.iloc[i]  # Obtém o registro correspondente
+                print(f"Propriedade {indice}:")
+                for coluna, valor in propriedade.items():
+                    s = f"{coluna.capitalize()}: {valor}"
+                    arquivo.write(s)
+                    arquivo.write("\n")
+                print("-" * 30)
 
-            time.sleep(2)
-            print("Pasta e arquivos criados com sucesso.")
+        time.sleep(2)
+        print("Pasta e arquivos criados com sucesso.")
+
+
+
 
