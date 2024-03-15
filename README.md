@@ -78,8 +78,8 @@ A biblioteca `shutil` é extremamente útil para realizar tarefas comuns de mani
 Para mais informações, consulte a [documentação oficial](https://docs.python.org/3/library/shutil.html) da biblioteca `shutil`.
 
 
-**Autor:** [Seu Nome]
+**Autor:** [Rômulo Cesar]
 
-**Contato:** [Seu Email]
+**Contato:** [romulo.cesardf@hotmail.com]
 
 **Licença:** Este projeto está sob a licença [Licença](link da licença).
